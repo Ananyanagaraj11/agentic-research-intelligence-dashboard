@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { API_BASE_URL } from "../config.js";
 
 const INSIGHTS = [
   "Data QA flagged 1.8% noisy abstracts for review.",
@@ -8,7 +9,7 @@ const INSIGHTS = [
   "Suggested action: fine-tune with SciBERT embeddings.",
 ];
 
-const API = "http://localhost:8000/analytics";
+const API = `${API_BASE_URL}/analytics`;
 
 export default function AgentPanel() {
   const [report, setReport] = useState(null);

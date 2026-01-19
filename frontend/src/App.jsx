@@ -7,6 +7,7 @@ import RadarCard from "./components/RadarCard.jsx";
 import TrendChart from "./components/TrendChart.jsx";
 import AgentPanel from "./components/AgentPanel.jsx";
 import DataInsights from "./components/DataInsights.jsx";
+import { API_BASE_URL } from "./config.js";
 
 const FALLBACK = {
   kpis: { precision: 0.818, recall: 0.888, f1: 0.851, accuracy: 0.842 },
@@ -44,7 +45,7 @@ const FALLBACK = {
   },
 };
 
-const API = "http://localhost:8000/analytics";
+const API = `${API_BASE_URL}/analytics`;
 
 export default function App() {
   const [kpis, setKpis] = useState(FALLBACK.kpis);

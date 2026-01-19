@@ -6,6 +6,17 @@ End-to-end project from dataset ingestion to model training, evaluation, and an 
 - https://frontend-two-gilt-97.vercel.app
 - The demo uses fallback metrics unless the API is deployed.
 
+## Deploy backend (Render)
+1. Create a free Render account.
+2. New → **Blueprint** → select this repo.
+3. Deploy. Render will use `render.yaml`.
+4. Copy the Render URL (example: `https://agentic-research-intelligence-api.onrender.com`).
+
+## Connect frontend to backend
+In Vercel project settings → **Environment Variables**:
+- `VITE_API_BASE_URL` = your Render URL
+Then redeploy on Vercel.
+
 ## What this project includes
 - Large-scale dataset ingestion from arXiv
 - Training pipeline for multi-class paper classification
