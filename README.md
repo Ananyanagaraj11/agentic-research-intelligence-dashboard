@@ -2,6 +2,10 @@
 
 End-to-end project from dataset ingestion to model training, evaluation, and an interactive dashboard.
 
+## Live demo
+- https://frontend-two-gilt-97.vercel.app
+- The demo uses fallback metrics unless the API is deployed.
+
 ## What this project includes
 - Large-scale dataset ingestion from arXiv
 - Training pipeline for multi-class paper classification
