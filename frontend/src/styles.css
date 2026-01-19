@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #f5f3ff;
+  background: radial-gradient(circle at top, #7c3aed 0%, #4c1d95 45%, #1e1b4b 100%);
+}
+
+.app {
+  max-width: 1200px;
+  margin: 32px auto 80px;
+  padding: 0 20px 40px;
+}
+
+.hero {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.4);
+}
+
+.hero h1 {
+  margin: 12px 0 8px;
+  font-size: 34px;
+}
+
+.hero p {
+  margin: 0 0 16px;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(34, 211, 238, 0.18);
+  color: #a5f3fc;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.hero-metrics {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin: 24px 0;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.35);
+}
+
+.stat-card {
+  text-align: left;
+}
+
+.stat-title {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.stat-value {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 10px 0 6px;
+}
+
+.stat-subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+}
+
+.chart-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.chart-body {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 12px;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.agent-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.insights-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.insights-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  font-size: 13px;
+}
+
+.insights-stats {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.insights-stats span {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+}
+
+.insights-stats strong {
+  display: block;
+  font-size: 18px;
+  margin-top: 6px;
+}
+
+.insights-section span {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.insights-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.insight-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.15);
+  font-size: 12px;
+}
+
+.insight-pill strong {
+  color: #facc15;
+}
+
+.agent-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.agent-list {
+  display: grid;
+  gap: 10px;
+}
+
+.agent-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 14px;
+}
+
+.agent-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #facc15;
+  margin-top: 6px;
+}
+
+.agent-btn {
+  margin-top: auto;
+  border: none;
+  background: linear-gradient(135deg, #22d3ee, #8b5cf6);
+  color: #0f172a;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.agent-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.agent-report {
+  font-weight: 600;
+  font-size: 13px;
+  color: #f8fafc;
+}
+
+.agent-error {
+  font-size: 12px;
+  color: #fca5a5;
+}
+
+.agent-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 900px) {
+  .chart-body {
+    grid-template-columns: 1fr;
+  }
+}
